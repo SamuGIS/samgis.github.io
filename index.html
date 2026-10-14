@@ -1,328 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>GIS Portfolio | Your Name</title>
-
-  <style>
-    :root {
-      --bg: #fff9fb;
-      --ink: #3c3540;
-      --muted: #776b78;
-      --accent: #c65f91;
-      --soft: #f8e5ee;
-      --card: #ffffff;
-      --line: #f0d8e3;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 24px 7% 70px;
-      background: linear-gradient(135deg, #fff1f7, #fce5ef);
-      border-bottom: 1px solid var(--line);
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
-
-    nav a,
-    .drop summary {
-      color: var(--ink);
-      text-decoration: none;
-      font-size: 0.95rem;
-      cursor: pointer;
-    }
-
-    nav a:hover,
-    .drop summary:hover {
-      color: var(--accent);
-    }
-
-    .drop {
-      position: relative;
-    }
-
-    .drop summary {
-      list-style: none;
-    }
-
-    .drop summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .menu {
-      position: absolute;
-      z-index: 5;
-      top: 30px;
-      left: 0;
-      min-width: 220px;
-      padding: 10px;
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      box-shadow: 0 12px 28px #6a344014;
-    }
-
-    .menu a {
-      display: block;
-      padding: 8px 10px;
-      border-radius: 7px;
-    }
-
-    .menu a:hover {
-      background: var(--soft);
-    }
-
-    .hero {
-      max-width: 900px;
-      margin: 66px auto 0;
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      font-weight: bold;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 6vw, 4.6rem);
-      line-height: 1.08;
-      margin: 12px 0;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-    }
-
-    p {
-      color: var(--muted);
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 38px 22px;
-    }
-
-    section {
-      padding: 24px 0;
-      scroll-margin-top: 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--card);
-      padding: 22px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .pill {
-      display: inline-block;
-      background: var(--soft);
-      color: #914267;
-      padding: 4px 10px;
-      border-radius: 99px;
-      font-size: 0.8rem;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 10px 16px;
-      border-radius: 9px;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      border-top: 1px solid var(--line);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        gap: 14px;
-      }
-
-      .menu {
-        left: auto;
-        right: 0;
-      }
-    }
-  </style>
-</head>
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIS Portfolio | Your Name</title>
+<style>
+:root{--bg:#fff9fb;--ink:#3c3540;--muted:#776b78;--accent:#c65f91;--soft:#f8e5ee;--card:#fff;--line:#f0d8e3}
+*{box-sizing:border-box}body{margin:0;font:16px/1.7 Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:24px 7% 70px;background:linear-gradient(135deg,#fff1f7,#fce5ef);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}nav a,.drop summary{color:var(--ink);text-decoration:none;font-size:.95rem;cursor:pointer}
+nav a:hover,.drop summary:hover{color:var(--accent)}.drop{position:relative}.drop summary{list-style:none}.drop summary::-webkit-details-marker{display:none}
+.menu{position:absolute;z-index:5;top:30px;left:0;min-width:220px;padding:10px;background:white;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 28px #6a344014}
+.menu a{display:block;padding:8px 10px;border-radius:7px}.menu a:hover{background:var(--soft)}
+.hero{max-width:900px;margin:66px auto 0}.eyebrow{color:var(--accent);letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;font-weight:bold}
+h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.08;margin:12px 0}h2{font-size:1.8rem}p{color:var(--muted)}
+main{max-width:1000px;margin:auto;padding:38px 22px}section{padding:24px 0;scroll-margin-top:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:var(--card);padding:22px;border:1px solid var(--line);border-radius:16px}
+.card h3{margin-top:0}.pill{display:inline-block;background:var(--soft);color:#914267;padding:4px 10px;border-radius:99px;font-size:.8rem}
+a{color:var(--accent)}.button{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:9px;text-decoration:none}
+footer{text-align:center;padding:25px;border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:600px){nav{gap:14px}.menu{left:auto;right:0}}
+</style></head>
 <body>
-
-  <header>
-
-    <nav>
-      <a href="#about">About</a>
-
-      <details class="drop">
-        <summary>Projects ▾</summary>
-
-        <div class="menu">
-          <a href="case-studies.html">Case Studies</a>
-          <a href="30-day-challenge-maps.html">30-Day Challenge Maps</a>
-          <a href="flood-analysis.html">Flood Analysis</a>
-          <a href="other-maps.html">Other Maps</a>
-        </div>
-      </details>
-
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="hero">
-
-      <div class="eyebrow">
-        GIS • Environment • Spatial Stories
-      </div>
-
-      <h1>
-        Mapping places.<br>
-        Understanding change.
-      </h1>
-
-      <p>
-        A little about my work in geography, environmental
-        management, remote sensing and GIS.
-      </p>
-
-      <a class="button" href="case-studies.html">
-        Explore my work
-      </a>
-
-    </div>
-  </header>
-
-  <main>
-
-    <section id="about">
-      <h2>A little about me</h2>
-
-      <p>
-        I’m a Geography and Environmental Management graduate
-        interested in using spatial data to explore environmental
-        challenges and communicate findings clearly.
-      </p>
-    </section>
-
-    <section>
-      <h2>Selected work</h2>
-
-      <div class="cards">
-
-        <article class="card">
-          <span class="pill">Remote sensing</span>
-
-          <h3>Durban Flood Analysis</h3>
-
-          <p>
-            Explore flood-related patterns using satellite
-            imagery and water or moisture indices.
-          </p>
-
-          <a href="flood-analysis.html">
-            View flood analysis →
-          </a>
-        </article>
-
-        <article class="card">
-          <span class="pill">Environmental GIS</span>
-
-          <h3>Gully Erosion Assessment</h3>
-
-          <p>
-            Investigating terrain, erosion features and
-            possible rehabilitation priorities.
-          </p>
-
-          <a href="case-studies.html">
-            View case studies →
-          </a>
-        </article>
-
-        <article class="card">
-          <span class="pill">Cartography</span>
-
-          <h3>30-Day Map Challenge</h3>
-
-          <p>
-            A collection of maps created to practise
-            cartography and spatial storytelling.
-          </p>
-
-          <a href="30-day-challenge-maps.html">
-            Browse the maps →
-          </a>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Tools & skills</h2>
-
-      <p>
-        QGIS · ArcGIS Pro · Remote Sensing · Cartography ·
-        Spatial Analysis · Environmental Assessment
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Let’s connect</h2>
-
-      <p>
-        Email: your.email@example.com ·
-        <a href="https://www.linkedin.com/">
-          LinkedIn
-        </a>
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    GIS & Environmental Portfolio · Your Name
-  </footer>
-
-</body>
-</html>
-```
+<header><nav>
+<a href="#about">About</a>
+<details class="drop"><summary>Projects ▾</summary><div class="menu">
+<a href="case-studies.html">Case Studies</a><a href="30-day-challenge-maps.html">30-Day Challenge Maps</a><a href="flood-analysis.html">Flood Analysis</a><a href="other-maps.html">Other Maps</a>
+</div></details>
+<a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav><div class="hero"><div class="eyebrow">GIS • Environment • Spatial Stories</div><h1>Mapping places.<br>Understanding change.</h1><p>A little about my work in geography, environmental management, remote sensing and GIS.</p><a class="button" href="case-studies.html">Explore my work</a></div></header>
+<main>
+<section id="about"><h2>A little about me</h2><p>I’m a Geography and Environmental Management graduate interested in using spatial data to explore environmental challenges and communicate findings clearly.</p></section>
+<section><h2>Selected work</h2><div class="cards">
+<article class="card"><span class="pill">Remote sensing</span><h3>Durban Flood Analysis</h3><p>Explore flood-related patterns using satellite imagery and water or moisture indices.</p><a href="flood-analysis.html">View flood analysis →</a></article>
+<article class="card"><span class="pill">Environmental GIS</span><h3>Gully Erosion Assessment</h3><p>Investigating terrain, erosion features and possible rehabilitation priorities.</p><a href="case-studies.html">View case studies →</a></article>
+<article class="card"><span class="pill">Cartography</span><h3>30-Day Map Challenge</h3><p>A collection of maps created to practise cartography and spatial storytelling.</p><a href="30-day-challenge-maps.html">Browse the maps →</a></article>
+</div></section>
+<section id="skills"><h2>Tools & skills</h2><p>QGIS · ArcGIS Pro · Remote Sensing · Cartography · Spatial Analysis · Environmental Assessment</p></section>
+<section id="contact"><h2>Let’s connect</h2><p>Email: your.email@example.com · <a href="https://www.linkedin.com/">LinkedIn</a></p></section>
+</main><footer>GIS & Environmental Portfolio · Your Name</footer></body></html>
